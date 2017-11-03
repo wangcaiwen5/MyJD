@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bwie.myjd.PersonalinformationActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/white_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+
+        <ImageView
+            android:id="@+id/iv_user_return"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_width="@dimen/x60"
+            android:layout_height="@dimen/y60"
+            android:src="@drawable/left_jiantou"
+            />
+        <TextView
+            android:textColor="@color/black_black_text_color"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#cccccc"
+        android:layout_height="@dimen/y1"></View>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_update_head_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="头像"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <com.bwie.uploadpicture.view.CircleImageView
+            android:id="@+id/iv_person_headimg"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dip"
+            android:src="@drawable/ren_head" />
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#cccccc"
+        android:layout_height="@dimen/y1"></View>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="用户名"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+        <TextView
+            android:id="@+id/tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x80"
+            android:text="18813146920" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#cccccc"
+        android:layout_height="@dimen/y1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="昵称"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/personal_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x80"
+            android:text="王才文" />
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/right_jiantou" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#cccccc"
+        android:layout_height="@dimen/y1"></View>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:textColor="#000000"
+            android:textSize="20dip"
+            android:text="性别"
+            />
+        <TextView
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x80"
+            android:text="保密" />
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/right_jiantou" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#cccccc"
+        android:layout_height="@dimen/y1"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:text="出生日期"
+            android:textColor="#000000"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x80"
+            android:text="保密" />
+
+        <ImageView
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x10"
+            android:src="@drawable/right_jiantou" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

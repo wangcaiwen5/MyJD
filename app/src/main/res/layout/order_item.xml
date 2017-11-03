@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x50"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/dianpu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="京东自营"
+
+            android:textColor="@color/black_black_text_color" />
+
+        <ImageView
+
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@drawable/jiantou"
+            android:tint="@color/black_black_text_color" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_order_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:text="创建时间:20171022" />
+
+        <TextView
+            android:id="@+id/tv_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:text="订单状态" />
+
+        <TextView
+            android:id="@+id/tv_order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:text="订单ID:232" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x20"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_order_sumprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x20"
+                android:text="实付款: ¥ 55555" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/gray_bg_color"></View>
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:background="#fff">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/bt_quzhifu"
+                    android:layout_width="@dimen/x170"
+                    android:layout_height="@dimen/x60"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_black_bk"
+                    android:text="去支付"
+                    android:textColor="@color/black_black_text_color"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/bt_zaicigoumai"
+                    android:layout_width="@dimen/x170"
+                    android:layout_height="@dimen/x60"
+                    android:layout_marginRight="@dimen/x20"
+                    android:background="@drawable/shape_shopplist_bk"
+                    android:text="再次购买"
+                    android:textColor="@color/red_text_color" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_bg_color"></View>
+
+
+
+</LinearLayout>

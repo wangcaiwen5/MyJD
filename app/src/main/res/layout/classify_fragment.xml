@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_list_item_bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mtoolbar"
+        android:contentInsetStart="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <LinearLayout
+                android:id="@+id/ll_scan_code"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/black_scan_code"
+                    android:id="@+id/iv_frist_scan_code" />
+
+
+            </LinearLayout>
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/ll_message"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/black_message"
+                    android:id="@+id/iv_received_msg" />
+
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/gray_shape_edit_search"
+                android:layout_toLeftOf="@id/ll_message"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ll_scan_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    app:layout_heightPercent="30%"
+                    app:layout_widthPercent="5%"
+                    android:src="@drawable/jd_search"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="都市丽人"
+                    />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    app:layout_heightPercent="30%"
+                    app:layout_widthPercent="5%"
+                    android:src="@drawable/jd"
+                    />
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_line_color"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/tools_scrlllview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/activity_bg"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/goods_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

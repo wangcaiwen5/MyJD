@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:gravity="center"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x150">
+
+       <TextView
+
+           android:textColor="@color/black_black_text_color"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/x60"
+           android:text="购物车"
+           />
+   </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_bg_color"
+        ></View>
+
+   <LinearLayout
+     android:gravity="center"
+
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x120">
+
+       <Button
+           android:layout_width="@dimen/x200"
+           android:layout_marginRight="@dimen/x20"
+           android:layout_marginLeft="@dimen/x60"
+           android:layout_height="@dimen/y100"
+           android:background="@drawable/shape_gray_bk"
+           android:text="登录"
+           />
+       <TextView
+           android:layout_marginRight="@dimen/x60"
+           android:layout_width="@dimen/x550"
+           android:layout_height="wrap_content"
+           android:text="登录后同步电脑与手机购物车中的商品"
+           />
+   </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_bg_color"
+        ></View>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x300">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kong_cart"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/x60"
+                android:textColor="@color/gray_text_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物车是空的"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/x40"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_weight="1"
+                android:layout_width="@dimen/x300"
+                android:layout_height="@dimen/y100"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@drawable/shape_gray_bk"
+                android:text="逛逛秒杀"
+                android:textColor="@color/black_black_text_color" />
+
+            <Button
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/x60"
+                android:background="@drawable/shape_shopplist_bk"
+                android:layout_width="@dimen/x300"
+                android:layout_height="@dimen/y100"
+                android:textColor="@color/red_text_color"
+                android:text="看看关注"
+                 />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

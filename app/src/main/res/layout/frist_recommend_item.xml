@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_text_color"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <com.zhy.android.percent.support.PercentLinearLayout
+       android:orientation="vertical"
+       android:layout_margin="5dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:id="@+id/iv_recommend_img"
+           android:layout_gravity="center"
+           android:layout_height="@dimen/y400"
+           android:layout_width="wrap_content" />
+
+       <TextView
+           android:id="@+id/tv_recommend_msg"
+           android:layout_width="wrap_content"
+           android:maxLines="2"
+           android:layout_gravity="center"
+           android:ellipsize="end"
+           android:layout_height="wrap_content" />
+       <RelativeLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_recommend_price"
+               android:textColor="@color/red_text_color"
+               android:layout_centerVertical="true"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <Button
+               android:layout_alignParentRight="true"
+               android:layout_width="@dimen/x150"
+               android:layout_centerVertical="true"
+               android:background="@drawable/shape_gray_bk"
+               android:layout_height="@dimen/y70"
+               android:text="看相似"
+               />
+
+       </RelativeLayout>
+
+   </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

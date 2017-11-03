@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ControlNumView">
+        <attr name="btWidth" format="dimension"></attr>
+        <attr name="btHeight" format="dimension"></attr>
+        <attr name="btTextColor" format="color"></attr>
+        <attr name="btTextSize" format="dimension"></attr>
+        <attr name="btBackground" format="color"></attr>
+
+        <attr name="tvWidth" format="dimension"></attr>
+        <attr name="tvTextSize" format="dimension"></attr>
+        <attr name="tvTextColor" format="color"></attr>
+
+    </declare-styleable>
+</resources>

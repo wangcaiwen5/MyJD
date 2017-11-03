@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_marginBottom="@dimen/x20"
+       android:background="@color/white_text_color"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:background="@color/white_text_color"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentStart="true">
+
+           <LinearLayout
+               android:id="@+id/ll"
+               android:gravity="center"
+               android:orientation="horizontal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentStart="true">
+
+               <CheckBox
+                   android:id="@+id/cb_num_selected"
+                   android:layout_width="@dimen/x40"
+                   android:layout_height="@dimen/x40"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="@dimen/x15"
+                   android:layout_toLeftOf="@+id/iv_child_item_img"
+                   android:background="@drawable/my_checkbox"
+                   android:button="@null" />
+
+               <ImageView
+                   android:layout_marginLeft="@dimen/x30"
+                   android:layout_centerVertical="true"
+                   android:id="@+id/iv_child_item_img"
+                   android:layout_width="@dimen/x200"
+                   android:layout_height="@dimen/y200"
+                   android:src="@drawable/ic_launcher"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/ll"
+               android:orientation="vertical"
+               android:layout_marginLeft="@dimen/x20"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:textColor="@color/black_black_text_color"
+                   android:id="@+id/tv_child_item_title"
+                   android:maxLines="2"
+                   android:ellipsize="end"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="标题"
+                   />
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/y50"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:textColor="@color/red_text_color"
+                       android:id="@+id/tv_child_item_price"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="价格"
+                       />
+
+                   <com.github.nukc.amountview.AmountView
+                       android:id="@+id/amountView"
+                       android:layout_marginLeft="@dimen/y100"
+                       android:layout_width="@dimen/x200"
+                       android:layout_height="@dimen/y70"
+                       android:layout_centerInParent="true"
+                       app:btnTextSize="@dimen/x30"
+                       app:btnWidth="@dimen/x50"
+                       app:tvWidth="@dimen/x70"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+       </RelativeLayout>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/x1"
+           android:layout_marginTop="@dimen/x20"
+
+           android:background="@color/gray_text_color"
+           ></View>
+
+   </LinearLayout>
+</LinearLayout>

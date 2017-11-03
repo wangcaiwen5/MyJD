@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/typeicon"
+        app:layout_heightPercent="50%w"
+        app:layout_widthPercent="50%w"
+        android:scaleType="center"
+        android:contentDescription="@null"
+        />
+    <TextView
+        android:id="@+id/typename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+</com.zhy.android.percent.support.PercentLinearLayout>
