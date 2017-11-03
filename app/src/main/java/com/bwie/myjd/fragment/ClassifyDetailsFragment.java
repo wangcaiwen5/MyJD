@@ -56,7 +56,7 @@ public class ClassifyDetailsFragment extends Fragment {
             parent.removeView(classifydetailsview);
         }
 
-
+        //上传到github    二次
         System.out.println("oncreatView");
 
 
