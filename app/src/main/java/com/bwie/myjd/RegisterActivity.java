@@ -10,6 +10,7 @@ import com.bwie.myjd.api.Api;
 import com.bwie.myjd.presenter.RegisterRequestrPresenter;
 import com.bwie.myjd.toast.ToastShow;
 import com.bwie.myjd.view.RegisterView;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;
 
@@ -34,6 +35,15 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         ButterKnife.inject(this);
 
         initView();
+    }
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     private void initView() {

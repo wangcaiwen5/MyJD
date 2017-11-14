@@ -6,7 +6,7 @@
 
 
 
-
+    <uses-sdk android:minSdkVersion="8"></uses-sdk>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -79,6 +79,10 @@
             android:name="UMENG_APPKEY"
             android:value="59ec4ccc677baa2d510004f5" >
         </meta-data>
+
+        <meta-data android:value="YOUR_APP_KEY" android:name="59fd15c9aed17925190001de"/>
+        <meta-data android:value="MyJD" android:name="UMENG_CHANNEL"/>
+
     </application>
 
 </manifest>

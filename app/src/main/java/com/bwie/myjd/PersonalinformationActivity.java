@@ -33,6 +33,7 @@ import com.bwie.uploadpicture.view.CircleImageView;
 import com.example.myokhttp.CallbackLoadFileInterface;
 import com.example.myokhttp.UpLoadFileUtils;
 import com.google.gson.Gson;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.File;
 import java.io.IOException;
@@ -48,6 +49,10 @@ import static com.bwie.uploadpicture.utils.FileUtil.getRealFilePathFromUri;
 
 public class  PersonalinformationActivity extends AppCompatActivity implements View.OnClickListener {
 
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
 
     //请求相机
     private static final int REQUEST_CAPTURE = 100;
@@ -82,6 +87,9 @@ public class  PersonalinformationActivity extends AppCompatActivity implements V
     @Override
     protected void onResume() {
         super.onResume();
+
+        MobclickAgent.onResume(this);
+
         final SharedPreferences isLogin = getSharedPreferences("isLogin", MODE_PRIVATE);
         int uid = isLogin.getInt("uid", -1);
         String url =Api.GETINFO+"?uid="+uid;

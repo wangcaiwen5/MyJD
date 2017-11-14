@@ -16,6 +16,7 @@ import com.bwie.myjd.presenter.RequestrPresenter;
 import com.bwie.myjd.view.OkRequestView;
 import com.bwie.uploadpicture.view.CircleImageView;
 import com.google.gson.Gson;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;
 
@@ -37,6 +38,10 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
     Button btDropOut;
     private SharedPreferences isLogin;
 
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +56,7 @@ public class SettingActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onResume() {
         super.onResume();
+        MobclickAgent.onResume(this);
         SharedPreferences isLogin = getSharedPreferences("isLogin", MODE_PRIVATE);
         int uid = isLogin.getInt("uid", -1);
         String url = Api.GETINFO+"?uid="+uid;

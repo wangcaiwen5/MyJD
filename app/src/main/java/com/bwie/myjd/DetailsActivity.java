@@ -18,6 +18,7 @@ import com.bwie.myjd.api.Api;
 import com.bwie.myjd.detailsfragment.DetailsFragment;
 import com.bwie.myjd.detailsfragment.PIngjiaFragment;
 import com.bwie.myjd.detailsfragment.ShoppFragment;
+import com.umeng.analytics.MobclickAgent;
 import com.umeng.socialize.ShareAction;
 import com.umeng.socialize.UMShareListener;
 import com.umeng.socialize.bean.SHARE_MEDIA;
@@ -64,7 +65,14 @@ public class DetailsActivity extends AppCompatActivity{
         initTab();
         initView();
     }
-
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
     private void initView() {
         ivFx.setOnClickListener(new View.OnClickListener() {
             @Override

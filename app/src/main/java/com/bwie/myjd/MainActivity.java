@@ -15,6 +15,7 @@ import com.bwie.myjd.fragment.FindFragment;
 import com.bwie.myjd.fragment.FristFragment;
 import com.bwie.myjd.fragment.MyFragment;
 import com.bwie.myjd.fragment.ShopingCartFragment;
+import com.umeng.analytics.MobclickAgent;
 import com.yzs.yzsbaseactivitylib.activity.YzsBaseActivity;
 import com.yzs.yzsbaseactivitylib.entity.EventCenter;
 
@@ -65,7 +66,14 @@ public class MainActivity extends YzsBaseActivity{
     protected void initLogic() {
 
     }
-
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
     @Override
     protected void getBundleExtras(Bundle bundle) {
 

@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.alipay.sdk.app.PayTask;
 import com.bwie.myjd.alipay.PayResult;
 import com.bwie.myjd.alipay.SignUtils;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -36,6 +37,16 @@ public class PayActivity extends AppCompatActivity implements View.OnClickListen
     Button pay;
     @InjectView(R.id.h5pay)
     Button h5pay;
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
+
     // 商户PID
     public static final String PARTNER = "2088901305856832";
     // 商户收款账号

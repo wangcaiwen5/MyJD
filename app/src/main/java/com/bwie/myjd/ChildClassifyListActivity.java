@@ -23,6 +23,7 @@ import com.bwie.myjd.presenter.RequestrPresenter;
 import com.bwie.myjd.toast.ToastShow;
 import com.bwie.myjd.view.OkRequestView;
 import com.google.gson.Gson;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -131,6 +132,16 @@ public class ChildClassifyListActivity extends AppCompatActivity implements View
 
     private void initSp() {
         styleConfig = getSharedPreferences("styleConfig", MODE_PRIVATE);
+    }
+
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     /**

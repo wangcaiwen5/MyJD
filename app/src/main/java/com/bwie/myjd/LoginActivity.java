@@ -14,6 +14,7 @@ import com.bwie.myjd.api.Api;
 import com.bwie.myjd.presenter.LoginRequestrPresenter;
 import com.bwie.myjd.toast.ToastShow;
 import com.bwie.myjd.view.LoginView;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;
 
@@ -40,7 +41,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ImageView qq;
     private SharedPreferences isLogin;
     private SharedPreferences.Editor edit;
-
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

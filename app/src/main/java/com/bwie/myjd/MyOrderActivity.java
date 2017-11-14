@@ -15,6 +15,7 @@ import com.example.myokhttp.CallbackInterface;
 import com.example.myokhttp.Method;
 import com.example.myokhttp.OkRequestUtils;
 import com.google.gson.Gson;
+import com.umeng.analytics.MobclickAgent;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -52,10 +53,15 @@ public class MyOrderActivity extends AppCompatActivity {
         initData();
     }
 
-    @Override
-    protected void onResume() {
+
+
+    public void onResume() {
         super.onResume();
-        System.out.println("onResume");
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     @Override
